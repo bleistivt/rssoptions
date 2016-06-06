@@ -32,7 +32,7 @@ class RssOptionsPlugin extends Gdn_Plugin {
             $rss = array_merge($sender->AnnounceData->resultArray(), $rss);
         }
 
-        // Use DateLastComment for <pubdate> element.
+        // Use DateLastComment for <pubDate> element.
         if ($request->get('DateLastComment')) {
             foreach ($rss as &$row) {
                 $row['DateInserted'] = $row['DateLastComment'];
