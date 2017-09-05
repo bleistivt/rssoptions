@@ -1,0 +1,16 @@
+{
+    "name": "RSS Options",
+    "description": "Provides options to improve syndication.",
+    "version": "0.1",
+    "mobileFriendly": true,
+    "license": "GNU GPL2",
+    "gitHub": "bleistivt/rssoptions",
+    "key": "rssoptions",
+    "type": "addon",
+    "authors": [
+        {
+            "name": "Bleistivt",
+            "homepage": "http://bleistivt.net"
+        }
+    ]
+}
