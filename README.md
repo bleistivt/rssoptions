@@ -14,5 +14,5 @@ This will make feed items reappear as unread when new comments are posted.
 These options are enabled by appending them to the query string of the feed URL, e.g:
 
     yourforum.com/categories/general.rss?DateLastComment=1
-    yourforum.com/discussions.rss?Announcements=1&DateLastComment=1
+    yourforum.com/discussions.rss?DateLastComment=1
     
