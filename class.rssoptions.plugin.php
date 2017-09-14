@@ -1,16 +1,5 @@
 <?php
 
-$PluginInfo['rssoptions'] = [
-    'Name' => 'RSS Options',
-    'Description' => 'Provides options to improve syndication.',
-    'Version' => '0.1',
-    'MobileFriendly' => true,
-    'Author' => 'Bleistivt',
-    'AuthorUrl' => 'http://bleistivt.net',
-    'License' => 'GNU GPL2',
-    'GitHub' => 'bleistivt/rssoptions'
-];
-
 class RssOptionsPlugin extends Gdn_Plugin {
 
     public function categoriesController_render_before($sender) {
@@ -27,12 +16,7 @@ class RssOptionsPlugin extends Gdn_Plugin {
         $request = Gdn::request();
         $rss = $sender->DiscussionData->resultArray();
 
-        // Merge announcements and discussions.
-        if ($request->get('Announcements') && is_object($sender->AnnounceData)) {
-            $rss = array_merge($sender->AnnounceData->resultArray(), $rss);
-        }
-
-        // Use DateLastComment for <pubDate> element.
+        // Use DateLastComment for <pubdate> element.
         if ($request->get('DateLastComment')) {
             foreach ($rss as &$row) {
                 $row['DateInserted'] = $row['DateLastComment'];
