@@ -3,9 +3,7 @@
 https://vanillaforums.org/addon/rssoptions-plugin
 
 This plugin provides improvements to Vanillas RSS feed.
-There are currently 2 options available:
-
-`Announcements` Include announcements in the feed.
+There is currently 1 option available:
 
 `DateLastComment` Set the publication date of discussions to the date of the last comment rather than the creation date of the discussion.
 This will make feed items reappear as unread when new comments are posted.
